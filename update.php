@@ -82,7 +82,7 @@
             <input type="text" name="Kategori" class="form-control" placeholder="Masukan Kategori berita" value="<?php echo $data['Kategori']; ?>" required/>
         <div class="form-group ">
             <label>Foto Kegiatan :</label>
-            <input type="file" name="Foto" class="form-control" placeholder="Masukan Foto Kegiatan" value="<?php echo $data['Foto']; ?>" required/>
+            <input type="text" name="Foto" class="form-control" placeholder="Masukan Foto Kegiatan" value="<?php echo $data['Foto']; ?>" required/>
             
         <input type="hidden" name="Nomor" value="<?php echo $data['Nomor']; ?>" />
         <button type="submit" name="submit" class="btn btn-primary mt-2">Submit</button>
@@ -90,12 +90,12 @@
 </div>
 
 <div class="my-5">
-  <!-- <footer class="text-center text-lg-start text-white bg-primary fixed-bottom">
+  <footer class="text-center text-lg-start text-white bg-primary fixed-bottom">
     <div class="text-center p-3">
       © 2023 Created by:
       <a class="text-white" href="https://mdbootstrap.com/">Kenzie Nararya</a>
     </div>
-  </footer> -->
+  </footer>
   <!-- Footer -->
 
 </div>

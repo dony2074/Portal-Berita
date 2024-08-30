@@ -25,11 +25,12 @@
         $judul=input($_POST["Judul"]);
         $deskripsi=input($_POST["Deskripsi"]);
         $kategori=input($_POST["Kategori"]);
-        $foto=input($_POST["Foto"]);
+        // $foto=input($_POST["Foto"]);
 
         //Query input menginput data kedalam tabel anggota
-        $sql="insert into berita (Judul,Deskripsi,Kategori,Foto) values
-		('$judul','$deskripsi','$kategori','$foto')";
+        // $sql="insert into berita (Judul,Deskripsi,Kategori,Foto) values
+        $sql="insert into berita (Judul,Deskripsi,Kategori) values
+		('$judul','$deskripsi','$kategori')";
 
         //Mengeksekusi/menjalankan query diatas
         $hasil=mysqli_query($kon,$sql);
@@ -61,10 +62,10 @@
             <label>Kategori :</label>
             <input type="text" name="Kategori" class="form-control" placeholder="Masukan Kategori Berita" required/>
         </div>
-                <div class="form-group mb-2">
+                <!-- <div class="form-group mb-2">
             <label>Foto Kegiatan:</label>
-            <input type="file" name="Foto" class="form-control" placeholder="Masukan Foto Kegiatan" required />
-        </div>
+            <input type="image" name="Foto" class="form-control" placeholder="Masukan Foto Kegiatan" required />
+        </div> -->
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
